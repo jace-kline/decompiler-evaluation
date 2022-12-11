@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Summary of varnode recovery for each metatype}
+\label{table:metatype-recovery-summary-with-levels}
+\begin{tabular}{lp{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}}
+\toprule
+{} &  Varnodes matched @ level NO\_MATCH &  Varnodes matched @ level OVERLAP &  Varnodes matched @ level SUBSET &  Varnodes matched @ level ALIGNED &  Varnodes matched @ level MATCH &  Varnode comparison score [0,1] &  Varnodes fraction partially recovered &  Varnodes fraction exactly recovered \\
+\midrule
+INT     &                                 13 &                                27 &                                0 &                                 4 &                           20955 &                        0.998369 &                               0.999381 &                             0.997905 \\
+FLOAT   &                                  0 &                                 0 &                                0 &                                 0 &                             191 &                        1.000000 &                               1.000000 &                             1.000000 \\
+POINTER &                                  3 &                                 0 &                                0 &                                 1 &                            9400 &                        0.999654 &                               0.999681 &                             0.999575 \\
+ARRAY   &                                  5 &                                17 &                               24 &                                 0 &                            2092 &                        0.986085 &                               0.997661 &                             0.978485 \\
+STRUCT  &                                  2 &                                 8 &                                0 &                                 0 &                            2025 &                        0.996069 &                               0.999017 &                             0.995086 \\
+UNION   &                                  0 &                                 0 &                                0 &                                 2 &                              14 &                        0.968750 &                               1.000000 &                             0.875000 \\
+\bottomrule
+\end{tabular}
+\end{table}

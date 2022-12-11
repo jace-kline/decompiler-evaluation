@@ -1,0 +1,4 @@
+,Varnodes matched @ level NO_MATCH,Varnodes matched @ level OVERLAP,Varnodes matched @ level SUBSET,Varnodes matched @ level ALIGNED,Varnodes matched @ level MATCH,"Varnode comparison score [0,1] (decomposed)",Varnodes fraction partially recovered (decomposed),Varnodes fraction exactly recovered (decomposed)
+strip,139776,31280,0,231267,131593,0.5859784123345245,0.738206009934147,0.24646760913701782
+standard,40187,56605,0,303527,133597,0.7030946815603952,0.9247316057207501,0.25022100854816115
+debug,10547,128,0,5,523236,0.9800638115358971,0.9802459562927501,0.9799968534376194

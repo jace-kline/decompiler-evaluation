@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Aggregated summary of functions, varnodes, and data bytes recovery by compilation case}
+\label{table:opts-overall-summary}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+{} &  Functions recovery fraction &  Varnode comparison score [0,1] &  Varnodes fraction partially recovered &  Varnodes fraction exactly recovered &  Varnode comparison score [0,1] (decomposed) &  Varnodes fraction partially recovered (decomposed) &  Varnodes fraction exactly recovered (decomposed) &  Bytes recovery fraction \\
+\midrule
+strip    &                     1.000000 &                        0.787554 &                               0.971250 &                             0.360808 &                                     0.585978 &                                           0.738206 &                                          0.246468 &                 0.612613 \\
+standard &                     1.000000 &                        0.815995 &                               0.992841 &                             0.386453 &                                     0.703095 &                                           0.924732 &                                          0.250221 &                 0.806042 \\
+debug    &                     0.999779 &                        0.997822 &                               0.999339 &                             0.996953 &                                     0.980064 &                                           0.980246 &                                          0.979997 &                 0.994534 \\
+\bottomrule
+\end{tabular}
+\end{table}

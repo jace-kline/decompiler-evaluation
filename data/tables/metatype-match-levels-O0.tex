@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Number of varnodes of each metatype grouped by match level}
+\label{table:metatype-match-levels}
+\begin{tabular}{lp{3.6cm}p{3.6cm}p{3.6cm}p{3.6cm}p{3.6cm}}
+\toprule
+{} &  Varnodes matched @ level NO\_MATCH &  Varnodes matched @ level OVERLAP &  Varnodes matched @ level SUBSET &  Varnodes matched @ level ALIGNED &  Varnodes matched @ level MATCH \\
+\midrule
+INT     &                                 23 &                                48 &                                0 &                             12248 &                            8680 \\
+FLOAT   &                                  0 &                                56 &                                0 &                               113 &                              22 \\
+POINTER &                                 44 &                                 4 &                                0 &                              5836 &                            3520 \\
+ARRAY   &                                181 &                               578 &                              352 &                                45 &                             982 \\
+STRUCT  &                                  1 &                               762 &                              257 &                               777 &                             238 \\
+UNION   &                                  0 &                                 2 &                                4 &                                10 &                               0 \\
+\bottomrule
+\end{tabular}
+\end{table}

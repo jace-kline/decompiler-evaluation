@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Summary of array recovery by compilation case}
+\label{table:opts-array-comparisons-summary}
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+{} &  Ground truth array varnodes &  Array comparisons &  Array varnodes inferred as array &  Array varnodes inferred as array fraction &  Array length (elements) average error &  Array length (elements) average error ratio &  Array size (bytes) average error &  Array size (bytes) average error ratio &  Array dimension match score [0,1] &  Array average element type comparison score [0,1] \\
+\midrule
+strip    &                         2138 &                823 &                               774 &                                   0.362021 &                             134.695018 &                                     2.844632 &                        458.574727 &                                0.911925 &                           0.979344 &                                           0.781288 \\
+standard &                         2138 &               1579 &                              1530 &                                   0.715622 &                             151.155795 &                                     5.441502 &                        239.022799 &                                0.474756 &                           0.974668 &                                           0.669833 \\
+debug    &                         2138 &               2226 &                              2128 &                                   0.995323 &                               9.415993 &                                     0.109666 &                          9.415993 &                                0.109666 &                           1.000000 &                                           0.999551 \\
+\bottomrule
+\end{tabular}
+\end{table}

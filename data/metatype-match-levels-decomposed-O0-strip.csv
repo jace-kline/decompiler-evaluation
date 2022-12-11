@@ -1,0 +1,4 @@
+,Varnodes matched @ level NO_MATCH,Varnodes matched @ level OVERLAP,Varnodes matched @ level SUBSET,Varnodes matched @ level ALIGNED,Varnodes matched @ level MATCH
+INT,132910,28812,0,217923,125159
+FLOAT,72,73,0,103,22
+POINTER,6725,2057,0,13208,6332

@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Summary of decomposed varnode recovery for each primitive metatype}
+\label{table:metatype-recovery-summary-with-levels-decomposed}
+\begin{tabular}{lp{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}p{2.2cm}}
+\toprule
+{} &  Varnodes matched @ level NO\_MATCH &  Varnodes matched @ level OVERLAP &  Varnodes matched @ level SUBSET &  Varnodes matched @ level ALIGNED &  Varnodes matched @ level MATCH &  Varnode comparison score [0,1] &  Varnodes fraction partially recovered &  Varnodes fraction exactly recovered \\
+\midrule
+INT     &                             132910 &                             28812 &                                0 &                            217923 &                          125159 &                        0.585978 &                               0.736710 &                             0.247936 \\
+FLOAT   &                                 72 &                                73 &                                0 &                               103 &                              22 &                        0.435185 &                               0.733333 &                             0.081481 \\
+POINTER &                               6725 &                              2057 &                                0 &                             13208 &                            6332 &                        0.591492 &                               0.762552 &                             0.223572 \\
+\bottomrule
+\end{tabular}
+\end{table}

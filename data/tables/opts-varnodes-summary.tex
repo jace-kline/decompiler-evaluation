@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Summary of high-level varnode recovery by compilation case}
+\label{table:opts-varnodes-summary}
+\begin{tabular}{lp{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}}
+\toprule
+{} & \rotatebox{70}{Varnodes matched @ level NO\_MATCH} & \rotatebox{70}{Varnodes matched @ level OVERLAP} & \rotatebox{70}{Varnodes matched @ level SUBSET} & \rotatebox{70}{Varnodes matched @ level ALIGNED} & \rotatebox{70}{Varnodes matched @ level MATCH} & \rotatebox{70}{Varnode comparison score} & \rotatebox{70}{Varnodes fraction partially recovered} & \rotatebox{70}{Varnodes fraction exactly recovered} \\
+\midrule
+strip    &                                               1000 &                                             1662 &                                            1001 &                                            18570 &                                          12550 &                                    0.788 &                                              0.971 &                                              0.361 \\
+standard &                                                249 &                                             1450 &                                             613 &                                            19029 &                                          13442 &                                    0.816 &                                              0.993 &                                              0.386 \\
+debug    &                                                 23 &                                               52 &                                              24 &                                                7 &                                          34677 &                                    0.998 &                                              0.999 &                                              0.997 \\
+\bottomrule
+\end{tabular}
+\end{table}

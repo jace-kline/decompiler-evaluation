@@ -1,0 +1,4 @@
+,Varnode comparison score,Varnodes fraction partially recovered,Varnodes fraction exactly recovered
+INT,0.978948265069215,0.9791344759550241,0.9788809121956245
+FLOAT,1.0,1.0,1.0
+POINTER,0.9994438952051409,0.9995056846267919,0.9993997599039616

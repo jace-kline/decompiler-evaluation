@@ -1,0 +1,4 @@
+,Ground truth functions,Functions found,Functions missed,Functions recovery fraction
+strip,18139,18139,0,1.0
+standard,18139,18139,0,1.0
+debug,18139,18135,4,0.9997794806769943

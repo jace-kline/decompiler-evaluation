@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Summary of array recovery by compilation case}
+\label{table:opts-array-comparisons-summary}
+\begin{tabular}{lp{1.09cm}p{1.09cm}p{1.09cm}p{1.09cm}p{1.09cm}p{1.09cm}p{1.09cm}p{1.09cm}p{1.09cm}p{1.09cm}p{1.09cm}}
+\toprule
+{} & \rotatebox{70}{Ground truth array varnodes} & \rotatebox{70}{Array comparisons} & \rotatebox{70}{Array varnodes inferred as array} & \rotatebox{70}{Array varnodes inferred as array fraction} & \rotatebox{70}{Array length (elements) average error} & \rotatebox{70}{Array length (elements) average error ratio} & \rotatebox{70}{Array size (bytes) average error} & \rotatebox{70}{Array size (bytes) average error ratio} & \rotatebox{70}{Array dimension match score} & \rotatebox{70}{Array average element type comparison score} \\
+\midrule
+strip    &                                        2138 &                               823 &                                              774 &                                              0.362 &                                            134.695 &                                              2.845 &                                          458.575 &                                              0.912 &                                       0.979 &                                              0.781 \\
+standard &                                        2138 &                              1579 &                                             1530 &                                              0.716 &                                            151.156 &                                              5.442 &                                          239.023 &                                              0.475 &                                       0.975 &                                              0.670 \\
+debug    &                                        2138 &                              2226 &                                             2128 &                                              0.995 &                                              9.416 &                                              0.110 &                                            9.416 &                                              0.110 &                                       1.000 &                                              1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

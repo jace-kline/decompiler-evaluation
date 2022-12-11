@@ -1,0 +1,31 @@
+\begin{table}
+\centering
+\caption{Summary of high-level varnode recovery by compilation case and metatype}
+\label{table:opts-varnodes-summary-metatypes}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+      &       &  Varnodes matched @ level NO\_MATCH &  Varnodes matched @ level OVERLAP &  Varnodes matched @ level SUBSET &  Varnodes matched @ level ALIGNED &  Varnodes matched @ level MATCH &  Varnode comparison score [0,1] &  Varnodes fraction partially recovered &  Varnodes fraction exactly recovered \\
+\midrule
+\multirow{6}{*}{strip} & INT &                                 66 &                                48 &                                0 &                             12204 &                            8681 &                        0.849850 &                               0.996857 &                             0.413401 \\
+      & FLOAT &                                  0 &                                56 &                                0 &                               113 &                              22 &                        0.632199 &                               1.000000 &                             0.115183 \\
+      & POINTER &                                 53 &                                 4 &                                0 &                              5834 &                            3513 &                        0.838952 &                               0.994364 &                             0.373564 \\
+      & ARRAY &                                729 &                               597 &                              565 &                                19 &                             228 &                        0.315248 &                               0.659027 &                             0.106642 \\
+      & STRUCT &                                152 &                               955 &                              432 &                               390 &                             106 &                        0.419287 &                               0.925307 &                             0.052088 \\
+      & UNION &                                  0 &                                 2 &                                4 &                                10 &                               0 &                        0.625000 &                               1.000000 &                             0.000000 \\
+\cline{1-10}
+\multirow{6}{*}{standard} & INT &                                 23 &                                48 &                                0 &                             12248 &                            8680 &                        0.851374 &                               0.998905 &                             0.413353 \\
+      & FLOAT &                                  0 &                                56 &                                0 &                               113 &                              22 &                        0.632199 &                               1.000000 &                             0.115183 \\
+      & POINTER &                                 44 &                                 4 &                                0 &                              5836 &                            3520 &                        0.839855 &                               0.995321 &                             0.374309 \\
+      & ARRAY &                                181 &                               578 &                              352 &                                45 &                             982 &                        0.625000 &                               0.915341 &                             0.459308 \\
+      & STRUCT &                                  1 &                               762 &                              257 &                               777 &                             238 &                        0.560074 &                               0.999509 &                             0.116953 \\
+      & UNION &                                  0 &                                 2 &                                4 &                                10 &                               0 &                        0.625000 &                               1.000000 &                             0.000000 \\
+\cline{1-10}
+\multirow{6}{*}{debug} & INT &                                 13 &                                27 &                                0 &                                 4 &                           20955 &                        0.998369 &                               0.999381 &                             0.997905 \\
+      & FLOAT &                                  0 &                                 0 &                                0 &                                 0 &                             191 &                        1.000000 &                               1.000000 &                             1.000000 \\
+      & POINTER &                                  3 &                                 0 &                                0 &                                 1 &                            9400 &                        0.999654 &                               0.999681 &                             0.999575 \\
+      & ARRAY &                                  5 &                                17 &                               24 &                                 0 &                            2092 &                        0.986085 &                               0.997661 &                             0.978485 \\
+      & STRUCT &                                  2 &                                 8 &                                0 &                                 0 &                            2025 &                        0.996069 &                               0.999017 &                             0.995086 \\
+      & UNION &                                  0 &                                 0 &                                0 &                                 2 &                              14 &                        0.968750 &                               1.000000 &                             0.875000 \\
+\bottomrule
+\end{tabular}
+\end{table}

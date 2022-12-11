@@ -1,0 +1,22 @@
+\begin{table}
+\centering
+\caption{Summary of decomposed varnode recovery by compilation case and primitive metatype}
+\label{table:opts-varnodes-summary-metatypes-decomposed}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+      &         &  Varnodes matched @ level NO\_MATCH &  Varnodes matched @ level OVERLAP &  Varnodes matched @ level SUBSET &  Varnodes matched @ level ALIGNED &  Varnodes matched @ level MATCH &  Varnode comparison score [0,1] &  Varnodes fraction partially recovered &  Varnodes fraction exactly recovered \\
+\midrule
+\multirow{3}{*}{strip} & INT &                             132910 &                             28812 &                                0 &                            217923 &                          125159 &                        0.585978 &                               0.736710 &                             0.247936 \\
+      & FLOAT &                                 72 &                                73 &                                0 &                               103 &                              22 &                        0.435185 &                               0.733333 &                             0.081481 \\
+      & POINTER &                               6725 &                              2057 &                                0 &                             13208 &                            6332 &                        0.591492 &                               0.762552 &                             0.223572 \\
+\cline{1-10}
+\multirow{3}{*}{standard} & INT &                              40017 &                             46846 &                                0 &                            290436 &                          127505 &                        0.707291 &                               0.920728 &                             0.252583 \\
+      & FLOAT &                                  0 &                               145 &                                0 &                               103 &                              22 &                        0.501852 &                               1.000000 &                             0.081481 \\
+      & POINTER &                                132 &                              9245 &                                0 &                             12955 &                            5990 &                        0.636166 &                               0.995339 &                             0.211496 \\
+\cline{1-10}
+\multirow{3}{*}{debug} & INT &                              10533 &                               124 &                                0 &                                 4 &                          494143 &                        0.978948 &                               0.979134 &                             0.978881 \\
+      & FLOAT &                                  0 &                                 0 &                                0 &                                 0 &                             270 &                        1.000000 &                               1.000000 &                             1.000000 \\
+      & POINTER &                                 14 &                                 2 &                                0 &                                 1 &                           28305 &                        0.999444 &                               0.999506 &                             0.999400 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,14 @@
+\begin{table}
+\centering
+\caption{Aggregated recovery summary of functions, varnodes, and data bytes by compilation case}
+\label{table:opts-overall-summary}
+\begin{tabular}{lp{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}p{1.33cm}}
+\toprule
+{} & \rotatebox{70}{Functions recovery fraction} & \rotatebox{70}{Varnode comparison score} & \rotatebox{70}{Varnodes fraction partially recovered} & \rotatebox{70}{Varnodes fraction exactly recovered} & \rotatebox{70}{Varnode comparison score.1} & \rotatebox{70}{Varnodes fraction partially recovered.1} & \rotatebox{70}{Varnodes fraction exactly recovered.1} & \rotatebox{70}{Bytes recovery fraction} \\
+\midrule
+strip    &                                       1.000 &                                    0.788 &                                              0.971 &                                              0.361 &                                      0.586 &                                              0.738 &                                              0.246 &                                   0.613 \\
+standard &                                       1.000 &                                    0.816 &                                              0.993 &                                              0.386 &                                      0.703 &                                              0.925 &                                              0.250 &                                   0.806 \\
+debug    &                                       1.000 &                                    0.998 &                                              0.999 &                                              0.997 &                                      0.980 &                                              0.980 &                                              0.980 &                                   0.995 \\
+\bottomrule
+\end{tabular}
+\end{table}
